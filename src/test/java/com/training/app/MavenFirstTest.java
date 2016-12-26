@@ -34,7 +34,9 @@ public class MavenFirstTest {
 		try {
 			driver.get("https://www.google.co.in/");
 			String text = driver.getTitle();
+			String text1 = driver.getCurrentUrl();
 			System.out.println("HomePage title:"+text);
+			System.out.println("HomePage title:"+text1);
 		} catch (Exception e) {
 			throw new Exception("Failed while verifying:verify_Test"+e.getLocalizedMessage());
 		}
